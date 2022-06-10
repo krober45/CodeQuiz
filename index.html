@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Code Quiz</title>
+    <link rel="stylesheet" href="./CSS/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/style.css" />
+
+</head>
+<body>
+  <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#" id="highScoreNav">High Scores</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <span class="navbar-nav ml-auto" id="timer">
+          </span>
+        </div>
+      </nav>
+  <!-- End Nav Bar -->
+
+  <!-- Welcome message div -->
+  <div class="card text-center" id="welcomeMessage">
+    <div class="card-body">
+      <h5 class="card-title">Welcome to Khari's Javascript Code Quiz</h5>
+      <p class="card-text">You will have 60 seconds to answer 5 questions. If you get a question wrong, 10 seconds will be taken off the timer. Your final score will be the amount of time left on the timer after you have answered all the questions. Good luck! </p>
+      <button type="button" class="btn btn-outline-dark" id="startBtn">Start Quiz</button>
+    </div>
+  </div>
+  <!-- End Welcome message div -->
+
+   <!-- High Score Form -->
+  <div class="card w-75" id="highScore">
+    <div class="card-body">
+      <p class="card-text"></p>
+      <h5 class="card-title" id="highScoreCardTitle"></h5>
+      <p>Enter your initials below to record your score.</p>
+      <form">
+        <div class="form-row align-items-center">
+          <div id="highScoreForm" class="col-md-6">
+            <label class="sr-only" for="inlineFormInput">Name</label>
+            <input type="text" class="form-control mb-2" id="inlineFormInput">
+          </div>
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-outline-dark mb-2" id="highScoreSubmit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- High Score Form -->
+
+  <!-- High Score page -->
+  <div class="card text-center" id="highScorePage">
+    <div class="card-body">
+      <h2 class="card-title" id="highScoreCard">High Scores</h2>
+      <pre class="card-text" id="initialsAndHighScore"></pre>
+      <button type="button" class="btn btn-outline-dark" id="restartBtn">Try Quiz Again</button>
+      <button type="button" class="btn btn-outline-dark" id="clearHighScore">Clear Scores</button>
+    </div>
+  </div>
+  <!-- High Score page End -->
+
+
+
+  <!-- Quiz Question Cards - initially hidden -->
+  <div class="card w-75" id="quizCard">
+    <div class="card-body">
+      <h5 class="card-title" id="quizCardTitle"></h5>
+      <p class="card-text" id="quizCardText"></p>
+      <button type="button" class="btn btn-outline-dark questionBtn" id="answer1"></button>
+      <br>
+      <button type="button" class="btn btn-outline-dark questionBtn" id="answer2"></button>
+      <br>
+      <button type="button" class="btn btn-outline-dark questionBtn" id="answer3"></button>
+      <br>
+      <button type="button" class="btn btn-outline-dark questionBtn" id="answer4"></button>
+    </div>
+      <p id="answerMessage"></p>
+      <button type="button" class="btn btn-outline-dark btn-lg" id="nextQuestionBtn">Next Question</button>
+  </div>
+
+  <!-- End Quiz Question Cards -->
+
+
+  
+  
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
