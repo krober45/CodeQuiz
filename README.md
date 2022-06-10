@@ -1,6 +1,6 @@
 # Javascript Code Quiz
-* A quiz built on Javascript. Link to deployed site (via GitHub pages): [
-](https://krober45.github.io/CodeQuiz/)
+* A quiz built on Javascript. Link to deployed site (via GitHub pages): 
+  (https://krober45.github.io/CodeQuiz/)
 ## What it does
 
 * This quiz is comprised of 5 questions. It is a timed quiz. If you get a question wrong, you lose 10 seconds off the timer. Your score at the end is how many seconds are left on the timer. You can submit your initials and this is saved to the high scores page.
